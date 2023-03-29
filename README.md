@@ -41,4 +41,12 @@ The pre-processing steps for the Data Science & STEM salary dataset start with i
 
 Before Preprocessing         |        After Preprocessing
 :---------------------------:|:----------------------------:
-![](Before Preprocessing.png)|
+![](Before_Preprocessing.png)| ![](After_Preprocessing.png)
+
+## Data Modelling via Star Schema
+The data model addresses the following BI questions as stated earlier:
+-	To ascertain how experience affects pay.
+-	To compare the annual salary differences between departments and units.
+-	Gain an understanding of the demographics of the company's workforce by demonstrating the impact of demographics on average earnings.
+-	To display the variation in average incomes worldwide and the dispersion of job locations.
+The model is separated into six tables. One fact table and 5 dimension tables (Employee Experience, Employee Profile, Employee Career Status, Jobs Location, Employee Position). The fact table is named ‘Main Table’. 
