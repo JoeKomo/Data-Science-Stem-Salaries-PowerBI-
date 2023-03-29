@@ -50,3 +50,59 @@ The data model addresses the following BI questions as stated earlier:
 -	Gain an understanding of the demographics of the company's workforce by demonstrating the impact of demographics on average earnings.
 -	To display the variation in average incomes worldwide and the dispersion of job locations.
 The model is separated into six tables. One fact table and 5 dimension tables (Employee Experience, Employee Profile, Employee Career Status, Jobs Location, Employee Position). The fact table is named ‘Main Table’. 
+
+Before Modelling             |        After Modelling
+:---------------------------:|:----------------------------:
+![](Model_view_before.png)| ![](Star_Schema_Model.png)
+
+-	The Employee Career status dimension table stores information about career level, career status index, company, and level. **The career Status Index** is the key connecting this table to the Main Table.
+-	Jobs Location dimension table stores information about the index and location. **Location** is the key connecting this table to the Main Table.
+-	Employee Position dimension table stores information about company, Employee Position Index, tag, and title. **Employee Position Index** is the key connecting this table with the Main Table.
+-	Employee Experience dimension table stores information about company, Employee Experience Index, years at company, and years of experience. **Employee Experience Index** is the key connecting this table to the Main Table.
+-	Employee Profile dimension Table stores information about Education Level, Employee Profile Index, ethnicity, and gender. **Employee Profile Index** is the key connecting this table with the Main Table.
+
+## DAX 
+Dax was used to calculate the range of years spent at the companies.
+![](Dax.png)
+
+## M - Language.
+M-Language was used to change titles and group career levels.
+![](M_language.png)
+
+## Data Analysis Visuals
+This report comprises 4 pages:
+- Demography
+![](Demography.png)
+
+- Experience & Salary
+![](Experience_&_Salaries.png)
+
+- Annual Variance
+![](Annual_Variance.png)
+
+- Key Influencer
+![](Key_Influencer.png)
+
+- Location
+![](Location_by_Average_Salary.png)
+
+## Key Findings
+- Mountain View in California USA is the highest-paid location across all companies considered with an average salary of $277,500. Bangalore, India and Delhi India are the least paid across the four companies with average salaries of $40,000 and $35,000 respectively.
+-	Highest paying location for degree holders is Washington DC with an average Salary of $225,000.
+-	A male software engineering manager earned an average salary of $210300 in comparison to a female colleague that earned $160000. It shows a wide margin between the male and female roles. Data Scientists are paid $159706 for males and $146200 for females while female Business analysts earned more than males with $112500 and $107833 respectively.
+-	The total number of males is 150 which is twice the number of females in all four firms.
+-	We have 44 males and 25 males at the Entry level, 91 Males and 41 Females at the Mid-level, and 8 Males and 4 females at the Executive level.
+-	Product Designers that are white earn the highest salary of about $220500.  Also, white workers in Human Resources earn the least with a $90000 salary.
+-	For all classes of career status, there is a moderately significant correlation between earnings and years of work experience.
+-	The average number of years of experience for entry-level data scientists and business analysts is four, with an average tenure of 1.5 years.
+-	Employees with 10 years of experience have stayed with the company for an average of 8-10 years, whereas employees with 0-2 years of work experience have stayed for less than a year.
+-	The lowest average earnings are approximately $151000 in the range of 0-2 years and the highest average earnings are approximately $165000 in the range of 8-10 years.
+-	In 2022, the highest-paid role was Software Engineering Manager with an average income of $229,500. The highest-paid role in 2021 was Product Manager with an average income of $252,000.
+-	The highest contributor is the Executive career level which raises the average income by more than $91,000. 
+
+## Conclusion & Recommendation
+-	The average earnings in Bangalore, India and Delhi India should be adjusted over time because they are the least paid locations.
+-	Most of the locations are in North America and Asia. While Africa only has one location in Rabat Morocco. This should be investigated as the technology market is growing in Africa as well. This will create more followers for the four companies and in turn increase revenue coming from the region.
+-	Attention should be given to entry-level salaries, which are lower than the international labour standard.
+-	More women should be encouraged to go into these roles for gender equality and societal growth.
+-	Salary increments should be done on regular basis as well as it was observed that the most significant increase happens after some years.
