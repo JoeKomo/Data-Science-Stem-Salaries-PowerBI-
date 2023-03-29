@@ -106,3 +106,5 @@ This report comprises 4 pages:
 -	Attention should be given to entry-level salaries, which are lower than the international labour standard.
 -	More women should be encouraged to go into these roles for gender equality and societal growth.
 -	Salary increments should be done on regular basis as well as it was observed that the most significant increase happens after some years.
+
+You can interact with the report [here](https://app.powerbi.com/links/PUu8fkmgUb?ctid=d03c2d35-3db6-4e31-acbc-a7f9acd28c9d&pbi_source=linkShare)
